@@ -40,7 +40,7 @@
         >
           <router-link
             :to="footerbutton.value"
-
+            style="color: #fffffd; text-decoration: none;"
           >
             {{ footerbutton.name }}
           </router-link>
