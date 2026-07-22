@@ -35,14 +35,15 @@
         <!-- Navbar buttons -->
         <div
           v-for="footerbutton in footerButtons"
-          :key="footerbutton.name"
+          :key="footerbutton.value"
           class="q-mx-sm"
         >
-          <q-btn
-            :label="footerbutton.name"
-            flat
-            no-caps
-          />
+          <router-link
+            :to="footerbutton.value"
+            style="color: #fffffd; text-decoration: none;"
+          >
+            {{ footerbutton.name }}
+          </router-link>
         </div>
       </q-toolbar>
     </q-footer>
@@ -50,6 +51,11 @@
 </template>
 
 <script setup lang="ts">
+import { useQuasar } from 'quasar';
+
+const q = useQuasar();
+q.dark.set(true);
+
 const headerButtons = [
   {
     name: "Objekte"
@@ -64,10 +70,12 @@ const headerButtons = [
 
 const footerButtons = [
   {
-    name: "Datenschutz"
+    name: "Datenschutz",
+    value: "Noch Route anpassen"
   },
   {
-    name: "Impressum"
+    name: "Impressum",
+    value: "Noch Route anpassen bruh"
   },
 ]
 
