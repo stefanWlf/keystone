@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header>
       <q-toolbar>
         <!-- Navbar title -->
         <q-toolbar-title class="q-ml-lg"> Test App </q-toolbar-title>
@@ -18,13 +18,15 @@
         </div>
 
       </q-toolbar>
+      <headerFooterLine/>
     </q-header>
 
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <q-footer >
+    <q-footer>
+      <headerFooterLine/>
       <q-toolbar>
         <!-- Navbar title -->
         <div>
@@ -51,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+import headerFooterLine from 'src/components/layoutComponents/headerFooterLine.vue';
 import { useQuasar } from 'quasar';
 
 const q = useQuasar();
