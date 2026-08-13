@@ -28,13 +28,13 @@
     <q-footer>
       <headerFooterLine/>
       <q-toolbar>
-        <!-- Navbar title -->
+        <!-- Footer title -->
         <div>
           <p style="margin: 0px;"> {{ "© Test Seite " + year }} </p>
         </div>
 
         <div class="col"/>
-        <!-- Navbar buttons -->
+        <!-- Footer buttons -->
         <div
           v-for="footerbutton in footerButtons"
           :key="footerbutton.value"
@@ -71,6 +71,7 @@ const headerButtons = [
   },
 ]
 
+// TODO: Routen anpassen
 const footerButtons = [
   {
     name: "Datenschutz",
