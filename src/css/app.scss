@@ -1,20 +1,46 @@
 @import "colors.scss";
 
 // app global css
-.p-footer {
-    font-size: 12px;
-}
-
-.p-routerlink {
-  color: #fffffd;
-  text-decoration: none;
+.sw-h1 .sw-h2 .p .div {
+    font-family: sans-serif;
 }
 
 // title sizes
-.h1 {
-    font-family: sans-serif;
-    font-size: 42px;
+.sw-h1 {
+    font-size: 40px;
     font-style: 500;
     line-height: 1.15;
     letter-spacing: -0.03em;
+}
+
+.sw-h2 {
+    font-size: 35px;
+    font-style: 500;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.sw-h3 {
+    font-size: 30px;
+    font-style: 500;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.sw-h4 {
+    font-size: 25px;
+    font-style: 500;
+    line-height: 1.6;
+    letter-spacing: -0.03em;
+}
+
+.sw-h5 {
+    font-size: 15px;
+    line-height: 1;
+}
+
+// Component classes
+.p-routerlink {
+  color: #fffffd;
+  text-decoration: none;
 }

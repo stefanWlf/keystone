@@ -86,3 +86,9 @@ const footerButtons = [
 const dateObject = new Date();
 const year = dateObject.getFullYear()
 </script>
+
+<style scoped>
+.p-footer {
+    font-size: 12px;
+}
+</style>
